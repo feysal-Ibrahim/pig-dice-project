@@ -1,4 +1,6 @@
-$("form#player1").submit
+$(document).ready function() {
+	
+
 
 
 
