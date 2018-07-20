@@ -20,7 +20,11 @@ Player.prototype.rollone = function() {
   this.tempscore += this.roll;
   }
 }
-
+Player.prototype.hold = function () {
+  this.totalscore += this.tempscore;
+  this.tempscore = 0;
+  alert(this.playerName + ", your turn is over, pass the mouse!");
+}
 
 
 //frontend logic here//
