@@ -1,4 +1,6 @@
 
+var player1="";
+var player2="";
 
 //frontend logic here//
 $(document).ready(function() {
