@@ -1,6 +1,10 @@
-
+//Backend logic here//
 var player1="";
 var player2="";
+var throwdice = function () {
+  return Math.floor(6*Math.random())+1;
+}
+
 
 //frontend logic here//
 $(document).ready(function() {
