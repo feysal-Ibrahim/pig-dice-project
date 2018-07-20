@@ -1,9 +1,17 @@
 //Backend logic here//
 var player1="";
 var player2="";
-var throwdice = function () {
+var dice = function () {
   return Math.floor(6*Math.random())+1;
 }
+function Player(turn) {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.turn = turn;
+  this.playerName;
+}
+
 
 
 //frontend logic here//
@@ -35,14 +43,14 @@ $(document).ready(function() {
       $(".start-menu").show();
     });
    $("button#player1roll").click(function(event){
-      player1.roll = throwdice();
+      player1.roll =dice();
       $("#die-roll-1").text(player1.roll);
       player1.rollone();
       $("#round-total-1").text(player1.tempscore);
     });
 
     $("button#player2roll").click(function(event){
-      player2.roll = throwdice();
+      player2.roll =dice();
       $("#die-roll-2").text(player2.roll);
       player2.rollone();
       $("#round-total-2").text(player2.tempscore);
