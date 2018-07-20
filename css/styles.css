@@ -1,4 +1,36 @@
 body{
 	font-style: italic;
 	font-family: serif;
+	background-color: lightblue;
+}
+.col-md-6 {
+  color:white;
+}
+h1 {
+  text-align: center;
+  color: Gray;
+}
+#player2-roll {
+  background-color: green;
+  color: black;
+}
+#player1-hold {
+  background-color: green;
+  color: black;
+}
+#player2-hold {
+  background-color: green;
+  color: black;
+}
+#start {
+  color: white;
+  background-color: blue;
+}#new-game {
+  background-color: blue;
+  color: white;
+  float: right;
+}
+#player1-roll {
+  background-color: green;
+  color: black;
 }
