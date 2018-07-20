@@ -39,6 +39,12 @@ ex output:var clearValues = function(){
   $(".player1Name").val("");
   $(".player2Name").val("");
 }
+### Setup/Installation Requirements
+Clone this repository
+
+Open it in your machine
+
+Make changes or review it.
 
 ### Support and contact details
 In case you have Feedback.you can forward it on my email:addictivefazman@gmail.com,
