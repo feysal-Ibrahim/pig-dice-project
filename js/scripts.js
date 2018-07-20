@@ -25,6 +25,13 @@ Player.prototype.hold = function () {
   this.tempscore = 0;
   alert(this.playerName + ", your turn is over, pass the mouse!");
 }
+Player.prototype.hold = function () {
+  this.totalscore += this.tempscore;
+  this.tempscore = 0;
+  // this.changeturn();
+  alert(this.playerName + ", your turn is over, pass the mouse!");
+}
+
 
 
 //frontend logic here//
