@@ -12,7 +12,7 @@ $(document).ready(function() {
     $("#player2Name").text(player2Name);
 });
   $("button#new-game").click(function(event) {
-    $(".player-console").hidd();
+    $(".player-console").hide();
     clearValues();
     player1.newGame();
     player2.newGame();
@@ -25,3 +25,4 @@ $(document).ready(function() {
 
       $(".start-menu").show();
     });
+  
