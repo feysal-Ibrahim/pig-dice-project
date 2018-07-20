@@ -1,9 +1,4 @@
-var player1 = ("");
-var player2 = ("");
-functionn player (turn) {
-	
-}
-
+$("form#player1").submit
 
 
 
