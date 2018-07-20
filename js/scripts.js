@@ -1,9 +1,11 @@
-//Backend logic here//
+//business logic
 var player1="";
 var player2="";
-var dice = function () {
+
+var throwdice = function () {
   return Math.floor(6*Math.random())+1;
 }
+
 function Player(turn) {
   this.roll = 0;
   this.tempscore = 0;
@@ -15,16 +17,12 @@ Player.prototype.rollone = function() {
   if (this.roll === 1) {
   this.tempscore = 0;
   alert("Sorry " + this.playerName + ", you rolled a 1! Your turn is over!")
-  // this.changeturn();
   } else {
   this.tempscore += this.roll;
   }
 }
-Player.prototype.hold = function () {
-  this.totalscore += this.tempscore;
-  this.tempscore = 0;
-  alert(this.playerName + ", your turn is over, pass the mouse!");
-}
+
+// hold
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
@@ -37,9 +35,19 @@ Player.prototype.winnerCheck = function () {
   }
 }
 
+Player.prototype.newGame = function () {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.playerName ="";
+}
 
+var clearValues = function(){
+  $(".player1Name").val("");
+  $(".player2Name").val("");
+}
 
-//frontend logic here//
+//frontend logic here
 $(document).ready(function() {
 
   $("button#start").click(function(event){
@@ -68,15 +76,15 @@ $(document).ready(function() {
       $(".start-menu").show();
     });
    $("button#player1roll").click(function(event){
-      player1.roll =dice();
+      player1.roll = throwdice();
       $("#die-roll-1").text(player1.roll);
       player1.rollone();
       $("#round-total-1").text(player1.tempscore);
     });
 
     $("button#player2roll").click(function(event){
-      player2.roll =dice();
-      $("#die-roll-2").text(player2.roll);
+      player2.roll = throwdice();
+      $("#dice-roll-2").text(player2.roll);
       player2.rollone();
       $("#round-total-2").text(player2.tempscore);
     });
