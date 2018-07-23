@@ -6,7 +6,7 @@ This is a web application that allows two players to play a game of Pig Dice.
 ### Technologies Used
 I have used HTML tools,styled it with css rules and ran behaviour with the advanced JavaScript tools using the jQuery library.
 ### Specification
-1:create a function object with property
+1:create a function object Player with property
 ex input 
 function Player(turn) {
   this.roll = 0;
