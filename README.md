@@ -16,14 +16,20 @@ function Player(turn) {
   this.playerName;
 }
 ex output: player(roll,tempscore,turn and playername)
+
+
 2:create another property roll once over the object player by using a prototype
 ex input: Player.prototype.rollone = function() {
   if (this.roll === 1) {
 ex output should give us our own object player with the new property added on:player(roll,tempscore,turn,playername,roll one and hold)
+
+
 3: again create another property .hold over the object player by using a prototype
 ex input: Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
+
+
 ex output: should give us our own object player with the new property added on:player(roll,tempscore,turn,playername,roll one and hold).
 4:again create another property .newGame over the object player by using a prototype .newGame
 ex input:Player.prototype.newGame = function () {
@@ -33,7 +39,9 @@ ex input:Player.prototype.newGame = function () {
   this.playerName ="";
 }
 ex output:should give us our own object player with the new property added on:player(roll,tempscore,turn,playername,roll one,hold and new Game).
-3:if a number is divisible by both 5 and 15 it return pingpong of the output number 15
+
+
+5:if a number is divisible by both 5 and 15 it return pingpong of the output number 15
 ex input:lastly i passed a function to clear the values entered by the users when the browser reloads
 ex output:var clearValues = function(){
   $(".player1Name").val("");
