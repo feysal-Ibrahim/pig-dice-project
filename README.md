@@ -28,9 +28,9 @@ ex output should give us our own object player with the new property added on:pl
 ex input: Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
-
-
 ex output: should give us our own object player with the new property added on:player(roll,tempscore,turn,playername,roll one and hold).
+
+
 4:again create another property .newGame over the object player by using a prototype .newGame
 ex input:Player.prototype.newGame = function () {
   this.roll = 0;
