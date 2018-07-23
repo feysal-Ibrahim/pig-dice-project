@@ -1,7 +1,10 @@
-body{
-	font-style: italic;
-	font-family: serif;
-	background-color: lightblue;
+html, body {
+  font-family: Arial,  sans-serif;
+   background-color: lightblue;
+   margin:0;
+     height:1000px;
+     position:relative
+     font-style:italic;
 }
 .col-md-6 {
   color:white;
